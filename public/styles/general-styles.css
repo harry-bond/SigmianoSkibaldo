@@ -1,0 +1,4 @@
+/** Simple ccs file with example of changing the heading color to blue**/
+h1{
+    color: blue;
+}
