@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '3.2.3'
+ruby '3.3.4'
 
 gem "rackup"          # A command-line tool to start Rack applications
 gem 'sinatra'         # The framework we are using for the web application
