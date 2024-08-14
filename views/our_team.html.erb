@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head Contains all the metadata -->
+  <head>
+    <meta charset="utf-8">
+    <title>Sigmiano Skibaldo</title>
+    <meta name="author" content="Harry Bond">
+    <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/general-styles.css">
+  </head>
+
+    <body>
+      <header>
+        <h1>Sigmiano Skibaldo</h1>
+        <div id="horizontal-flex">
+          <a href="/home"><h2>The<br>League</h2></a>
+          <a href="/player-statistics"><h2>Player<br>Statistics</h2></a>
+          <a href="/our-team"><h2>Our<br>Team</h2></a>
+          <a href="/as-it-stands-awards"><h2>As it Stands<br>Awards</h2></a>
+        </div>
+      </header>
+
+      <main>
+        <% for id in (1..@players.count).step(2) %>
+          <div id="player-details-row">
+            <% player = Player.first(id: id) %>
+            <div id="player-details">
+              <h3><%= h player.name %></h3>
+              <h4>Primary Position: <%= h player.primary_position %></h4>
+              <h4>Secondary Position: <%= h player.secondary_position.to_s %></h4>
+              <h4>Height: <%= h player.height %></h4>
+              <h4>Preffered Foot: <%= h player.preffered_foot %></h4>
+            </div>
+            <% unless Player.first(id: id+1).nil? %>
+              <% player = Player.first(id: id+1) %>
+              <div id="player-details">
+                <h3><%= h player.name %></h3>
+                <h4>Primary Position: <%= h player.primary_position %></h4>
+                <h4>Secondary Position: <%= h player.secondary_position.to_s %></h4>
+                <h4>Height: <%= h player.height %></h4>
+                <h4>Preffered Foot: <%= h player.preffered_foot %></h4>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
+      </main>
+
+      <footer>
+      </footer>
+    </body>
+</html>
