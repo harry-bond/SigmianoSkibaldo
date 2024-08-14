@@ -1,5 +1,5 @@
 get '/' do # Redirects straight to /home
-    redirect '/our-team'
+    redirect '/home'
 end
 
 get '/our-team' do # Shows landing page
