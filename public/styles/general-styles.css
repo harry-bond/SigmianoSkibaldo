@@ -1,65 +1,99 @@
 /** Simple ccs file with example of changing the heading color to blue**/
-h1{
-    color: black;
-    white-space: nowrap;
-    padding-left: 4%;
-}
-h2{
-    color: black;
-    text-align: center;
-    margin:0;
-    padding: 0;
-}
-a{
-    border: black;
-    border-style: solid;
-    background-color: darkgrey;
-    text-decoration: none;
-    padding: 0;
-    width: 20%;
-}
-header{
+header{/**Navigation Bar**/
     background-color: white;
     display: flex;
     flex-direction: row;
 }
-body{
+h1{/**Main header text**/
+    color: black;
+    white-space: nowrap;
+    padding-left: 4%;
+    font-size: 3vw;
+}
+h2{/**Text in the header buttons**/
+    color: black;
+    text-align: center;
     margin:0;
+    padding: 0;
+    font-size: 1.5vw;
+}
+a{/**The button behind the menu items**/
+    border: black;
+    border-style: solid;
     background-color: darkgrey;
+    text-decoration: none;
+    padding: 2% 0;
+    width: 20%;
 }
-#horizontal-align{
-    display: flex;
-    flex-direction: row;
-}
-#horizontal-flex{
+#horizontal-flex{/**Flex box that the menu elements are inside of**/
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding:0;
     margin: 0;
-    margin-left:30%;
+    margin-left: 20vw;
     width: 100%;
 }
 
-#player-details-row
-{
+
+
+body{/**Sets background of page to darkgrey and removes margins **/
+    margin:0;
+    background-color: darkgrey;
+}
+
+footer{/**Simple Flexbox for footer to separate components**/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    margin-top: 3vw;
+}
+
+h3{/**Heading of page**/
+    text-decoration: underline;
+    font-size: 2vw;
+    margin-left: 45vw;
+}
+
+#pair-of-players {/**To put two players side by side**/
     display: flex;
     flex-direction: row;
 }
-#player-details{
+#vertical-flex {/**For name above the card**/
+    display: flex;
+    flex-direction: column;
+}
+#profile-picture{/**Profile picture to go in player details flexbox**/
+    width: 15vw;
+    height: 15vw;
+    border-radius: 2vw;
+    border-color: dimgrey;
+    border-style: solid;
+    border-width: 0.4vw;
+    margin-left: 3.7vw;
+}
+#player-details{/**Player details card for next to profile picture**/
     background-color: white;
-    border-color: black;
-    border-radius:15px;
-    width:20%;
-    margin-left: 5%;
-    padding-left: 20%;
+    border-radius:2vw;
+    width:25vw;
+    margin-left: 2vw;
+    padding-left: 2vw;
 }
-
-
-h3{
-
+h4{/**Player name font style**/
+    font-size: 2vw;
+    text-align: left;
+    margin-left: 5vw;
+    margin-bottom: 0.5vw;
+    margin-top: 2vw;
 }
-h4{
-
+h5{/**Player details font style**/
+    font-size: 1.5vw;
+    margin: 1.7vw 0;
+}
+h6{/**Footer font**/
+    font-size: 1vw;
+    padding: 0.3vw 1vw;
+    margin: 0;
 }
