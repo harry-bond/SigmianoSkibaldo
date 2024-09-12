@@ -1,100 +1,129 @@
 /** Simple ccs file with example of changing the heading color to blue**/
-header{/**Navigation Bar**/
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-}
-h1{/**Main header text**/
-    color: black;
-    white-space: nowrap;
-    padding-left: 4vw;
-    font-size: 3vw;
-}
-h2{/**Text in the header buttons**/
-    color: black;
-    text-align: center;
-    margin:0;
-    padding: 0;
-    font-size: 1.5vw;
-}
-a{/**The button behind the menu items**/
-    border: black;
-    border-style: solid;
-    border-width: 0.2vw;
-    background-color: darkgrey;
-    text-decoration: none;
-    padding: 0.7vw 0;
-    width: 10vw;
-}
-#horizontal-flex{/**Flex box that the menu elements are inside of**/
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding:0;
-    margin: 0;
-    margin-left: 20vw;
-    width: 100%;
-}
+
+/**Navigation Bar**/
+    header{
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+    }
+    h1{/**Main header text**/
+        color: black;
+        white-space: nowrap;
+        padding-left: 4vw;
+        font-size: 3vw;
+    }
+    h2{/**Text in the header buttons**/
+        color: black;
+        text-align: center;
+        margin:0;
+        padding: 0;
+        font-size: 1.5vw;
+    }
+    a{/**The button behind the menu items**/
+        border: black;
+        border-style: solid;
+        border-width: 0.2vw;
+        background-color: darkgrey;
+        text-decoration: none;
+        padding: 0.7vw 0;
+        width: 10vw;
+    }
+    #horizontal-flex{/**Flex box that the menu elements are inside of**/
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding:0;
+        margin: 0;
+        margin-left: 20vw;
+        width: 100%;
+    }
 
 
+/**Every page**/
+    body{/**Sets background of page to darkgrey and removes margins **/
+        margin:0;
+        background-color: darkgrey;
+    }
+    footer{/**Simple Flexbox for footer to separate components**/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: white;
+        margin-top: 3vw;
+    }
+    h6{/**Footer font**/
+        font-size: 1vw;
+        padding: 0.3vw 1vw;
+        margin: 0;
+    }
 
-body{/**Sets background of page to darkgrey and removes margins **/
-    margin:0;
-    background-color: darkgrey;
-}
 
-footer{/**Simple Flexbox for footer to separate components**/
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: white;
-    margin-top: 3vw;
-}
+/** For the League Table**/
+    table {
+        width: 80vw;
+        margin: 3vw 10vw;
+        border-collapse: collapse;
+    }
+    td {
+        border: 0.2vw solid;
+        font-size: 3vw;
+        text-align: center;
+        padding: 0;
+        width: 7.5vw;
+    }
+    th{
+        padding: 0;
+        font-size: 1.5vw;
+        border: 0.2vw solid;
+        text-align: center;
+    }
+    thead > tr > th{
+        font-size: 2vw;
+        text-align: center;
+    }
 
-h3{/**Heading of page**/
-    text-decoration: underline;
-    font-size: 2vw;
-    margin-left: 45vw;
-}
 
-#pair-of-players {/**To put two players side by side**/
-    display: flex;
-    flex-direction: row;
-}
-#vertical-flex {/**For name above the card**/
-    display: flex;
-    flex-direction: column;
-}
-#profile-picture{/**Profile picture to go in player details flexbox**/
-    width: 15vw;
-    height: 15vw;
-    border-radius: 2vw;
-    border-color: dimgrey;
-    border-style: solid;
-    border-width: 0.4vw;
-    margin-left: 3.7vw;
-}
-#player-details{/**Player details card for next to profile picture**/
-    background-color: white;
-    border-radius:2vw;
-    width:25vw;
-    margin-left: 2vw;
-    padding-left: 2vw;
-}
-h4{/**Player name font style**/
-    font-size: 2vw;
-    text-align: left;
-    margin-left: 5vw;
-    margin-bottom: 0.5vw;
-    margin-top: 2vw;
-}
-h5{/**Player details font style**/
-    font-size: 1.5vw;
-    margin: 1.7vw 0;
-}
-h6{/**Footer font**/
-    font-size: 1vw;
-    padding: 0.3vw 1vw;
-    margin: 0;
-}
+/**For the player details page**/
+    h3{/**Heading of page**/
+        text-decoration: underline;
+        font-size: 3vw;
+        margin-bottom: 0;
+        margin-left: 42vw;
+    }
+
+    #pair-of-players {/**To put two players side by side**/
+        display: flex;
+        flex-direction: row;
+    }
+    #vertical-flex {/**For name above the card**/
+        display: flex;
+        flex-direction: column;
+    }
+    #profile-picture{/**Profile picture to go in player details flexbox**/
+        width: 15vw;
+        height: 15vw;
+        border-radius: 2vw;
+        border-color: dimgrey;
+        border-style: solid;
+        border-width: 0.4vw;
+        margin-left: 3.7vw;
+    }
+    #player-details{/**Player details card for next to profile picture**/
+        background-color: white;
+        border-radius:2vw;
+        width:25vw;
+        margin-left: 2vw;
+        padding-left: 2vw;
+    }
+    h4{/**Player name font style**/
+        font-size: 2vw;
+        text-align: left;
+        margin-left: 5vw;
+        margin-bottom: 0.5vw;
+        margin-top: 2vw;
+    }
+    h5{/**Player details font style**/
+        font-size: 1.5vw;
+        margin: 1.7vw 0;
+    }
