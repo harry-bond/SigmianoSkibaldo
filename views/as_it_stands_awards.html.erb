@@ -21,7 +21,26 @@
     </header>
 
     <main>
-
+      <div id="horizontal-flex">
+        <div id="vertical-flex">
+          <h3></h3>
+          <h5></h5>
+          <h3 style="text-decoration: underline"></h3>
+          <img id="profile-picture" src="images/<%= h @mostGoals.first_name %><%= h @mostGoals.second_name %>pp.png" alt="A picture of <%= h @mostGoals.first_name %> <%= h @mostGoals.second_name %>">
+        </div>
+        <div id="vertical-flex">
+          <h3></h3>
+          <h5></h5>
+          <h3 style="text-decoration: underline"></h3>
+          <img id="profile-picture" src="images/<%= h @mostMotm.first_name %><%= h @mostMotm.second_name %>pp.png" alt="A picture of <%= h @mostMotm.first_name %> <%= h @mostMotm.second_name %>">
+        </div>
+        <div id="vertical-flex">
+          <h3></h3>
+          <h5></h5>
+          <h3 style="text-decoration: underline"></h3>
+          <img id="profile-picture" src="images/<%= h @mostSkibs.first_name %><%= h @mostSkibs.second_name %>pp.png" alt="A picture of <%= h @mostSkibs.first_name %> <%= h @mostSkibs.second_name %>">
+        </div>
+      </div>
     </main>
 
     <footer>
