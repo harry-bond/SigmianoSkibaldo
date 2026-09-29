@@ -1,7 +1,12 @@
 [![Sigmaino Skibaldo Ruby Tests](https://github.com/harry-the-fish/sigmiano-skibaldo/actions/workflows/ruby.yml/badge.svg)](https://github.com/harry-the-fish/sigmiano-skibaldo/actions/workflows/ruby.yml)
 # Sigmiano Skibaldo
-A website for tracking football stats
-  
+A website with the final goal of tracking football teams and players throughout the season.
+The players will be able to login with an account and view their own statistics. 
+There will be a page dedicated to viewing the top scorers, most man of the matches etc.
+They will be able to see their team along with profile pictures set by the players.
+An admin page for the site will be available where they simply have to input the man of the match, final scores (with the scorers) for each fixtures.
+This has the potential to be expanded to a referees section to save the admin having having to put it in.
+
 ## File Structure
 The below document details the file structure used in the project.
 
@@ -10,7 +15,15 @@ The below document details the routes to each of the pages on the site map.
 #### General Routes
 
 * `'/'`
-  * Displays "Sinatra Application"
+  * Redirects the user to the home page
+* `'/home'`
+  * Shows the live league table along with upcoming fixtures
+* `'/player-statistics'`
+  * Displays the current players statistics
+* `'/our_team'`
+  * Shows the live teams statistics
+* `'/as-it-stands-awards'`
+  * Calculates the players currently in top position for each player awards
   
 
 ### Directories
@@ -28,12 +41,14 @@ The below tree is based on the current site map
     │   └── development_db.sqlite
     │
     ├── models/
-    │   └── Player.rb
+    │   ├── Player.rb
+    │   └── Team.rb
     │
     ├── public/
-    │   └──  styles/
-    │       └── general-styles.css
-    │
+    │   ├── styles/
+    │   │    └── general-styles.css
+    │   └── images/
+    │         └── ...(images temp store)
     ├── spec/
     │   ├── acceptance/
     │   │   ├── home_spec.rb

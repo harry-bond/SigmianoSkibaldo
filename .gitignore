@@ -1,2 +1,3 @@
 spec/coverage
 database/test_db.sqlite
+.github
